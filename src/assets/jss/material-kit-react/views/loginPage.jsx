@@ -1,20 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/material-kit-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import { container } from "assets/jss/material-kit-react.jsx";
 
 const signupPageStyle = {
@@ -40,7 +23,7 @@ const signupPageStyle = {
     border: "0",
     alignItems: "center",
     "&:before": {
-      background: "rgba(0, 0, 0, 0.5)"
+      background: "rgba(256, 256, 256, 0.15)"
     },
     "&:before,&:after": {
       position: "absolute",
@@ -102,6 +85,13 @@ const signupPageStyle = {
   },
   inputIconsColor: {
     color: "#495057"
+  }
+};
+
+signupPageStyle.pagesHeader = {
+  ...signupPageStyle.pageHeader,
+  "&:before": {
+    background: "rgba(0, 0, 0, 0.1)"
   }
 };
 
